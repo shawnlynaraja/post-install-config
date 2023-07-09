@@ -297,6 +297,188 @@ Click Create.</p>
 ![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/d49d4868-0876-464f-9328-e98cd64a291b)
 
 
+<pre>
+
+
+
+  
+  
+</pre>
+
+
+<h2>Configure Users (customers)
+Agent Panel -> Users -> Add Karen & Ken
+</h2>
+
+
+<p>Users can now create an account and log-in to create a ticket or check a ticket’s status. 
+  
+  As always with osTicket, users or ticket creators are associated with their email address as the unique identifier of each user. 
+  
+  The User Directory, located on the Agent Panel, allows agents to search tickets by user as well as create Organizations to associate the user to. 
+  
+  Agents can be configured as internal Account Managers for tickets created by users of an Organization.
+
+  Users are the ticket owners of the tickets in the help desk. When a ticket is created in the help desk, 
+  
+  the user is associated with their email address in the User Directory of the help desk. Users can be added or deleted from the User Directory of the help desk at any time.
+
+</p>
+
+<h2> We are now going to the Agent Panel now. Click Users & Add New Users
+</h2>
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/c6b5f14a-7b5f-4110-a89b-c6655046a720)
+
+<pre>
+
+  
+</pre>
+
+<p>Enter its customer's credentials and click Add User</p>
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/aba40330-d9c8-4808-b3d6-4693203e4bc7)
+
+<pre>
+
+  
+</pre>
+
+<p>Do also the same thing for the Customer Ken.</p>
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/c7b6fc77-246b-40b1-b412-4f67ca2e0ed1)
+
+
+<pre>
+
+  
+</pre>
+
+<h2>
+  Configure SLA
+  
+Admin Panel -> Manage -> SLA
+  
+Sev-A (1 hour, 24/7)
+
+Sev-B (4 hours, 24/7)
+
+Sev-C (8 hours, business hours)
+
+</h2>
+
+<p>The purpose of the SLA Plan is to provide a length of time in which the help desk Administrator expects tickets to be closed.
+  
+The way osTicket defines them, is putting them in a time limit
+
+SLA in osTicket is in a time limit, meaning, for how long the ticket is going to be open.</p>
+
+<pre>
+  
+</pre>
+
+<p>To create 3 SLAs, We are going back to the Admin Panel, Click Manage and click SLA</p>
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/35176ddf-c2a9-499a-bad1-fd893f875647)
+
+<p> - Click "Add new SLA plan"
+  
+  - Name it SEV-A, 
+  
+  - Choose 24/7 for Schedule. 24/7 means if there is an issue with the customer's computer on the weekened, it doesn't matter if it's on the weekend.
+
+  - Grace Period: Amount, in hours, before tickets with this SLA will become overdue if not closed in allotted time.
+
+  - For example, if it happens on Sunday night 10:00 PM, the ticket needs to be resolved by Sunday night 11:00 PM.
+
+  - Click Add Plan
+
+  </p>
+
+  ![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/4c2029d8-0021-480d-bd8d-df2d46196a07)
+
+
+<pre>
+  
+</pre>
+
+<h2>For SEV-B</h2>
+
+<p> It will be scheduled for 24/7 and grace period: 4 Hours
+
+- For example, on Saturday morning 2:00 AM, It will need to be resolved by Saturday morning 6:00 AM because of our grace period: 4 hours.
+
+- Click Add Plan
+</p>
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/cc23b6e0-fe21-461d-becc-f7af350b7ff0)
+
+<pre>
+
+  
+</pre>
+
+<h2>For SEV-C</h2>
+
+<p>It will be scheduled during business hours (Mon-Fri 8AM-5PM)
+  
+  - Grace Period: 8 Hours 
+  
+  - Basically, if something happens on Friday at 3:00 PM, We have 2 more hours before business closes. So another 6 hours starting on Monday at 8:00 AM.
+  
+  - Click Add Plan
+  
+  </p>
+
+  ![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/9db019ea-60dd-4025-a1d9-d95d30a22380)
+
+<pre>
+
+
+  
+</pre>
+
+We now have SLAs to create and assigned tickets.
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/f0c3bc72-c8a9-4099-86c3-12d64852e9b5)
+
+<pre>
+
+
+  
+</pre>
+
+
+  <h2>Configure Help Topics
+Admin Panel -> Manage -> Help Topics
+Business Critical Outage
+Personal Computer Issues
+Equipment Request
+Password Reset
+</h2>
+
+<p>Help Topics will help streamline your end-user’s help desk experience to ensure proper assignment and prompt response to the ticket. 
+  
+  Create as many Help Topics as needed and can even nest Help Topics within each other for further breakdown (For example, Human Resources and Human Resources/Payroll.)
+
+Help Topics will determine what Department the ticket is routed to which will determine which Agents have access to the ticket. The Help Topic also can determine other configurations of the ticket, such as the ticket’s SLA (or Service Level Agreement) and priority of a ticket, i.e. Emergency to Low.
+
+There are two places where the Help Topic must be selected on New Tickets; the client portal and new tickets created internally by staff. When Users select the Help Topic, they are not aware of the configurations in place for that Help Topic</p>
+
+
+<h2>Go to the Admin Panel -> Manage -> Help Topics</h2>
+
+<p>Cllick add new Help Topic</p>
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/8b7746ad-af40-4821-8d15-3a94b72e9aad)
+
+<pre>
+  
+</pre>
+
+<p>Create 4 new help topics: 1) Business Critical Outage, 2) Personal Computer Issues, 3) Equipment Request, 4) Password Reset</p>
+
+![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/98fe8f63-454a-4c7c-a572-a3bd3cc18ed7)
 
 
 
