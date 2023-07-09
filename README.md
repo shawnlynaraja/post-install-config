@@ -59,7 +59,13 @@ Copy the Public IP address of the osTicket Virtual Machine. Then open Remote Des
 Paste the osTicket VM Public IP Address into the Remote Desktop Connection.
 Enter your osTicket Virtual Machine username and password.
 
-<h2>Browse to your help desk login page: http://localhost/osTicket/scp/login.php & Enter your credentials (This is for the Admin log-in & do admin things.)</h2>
+<h2>Browse to your help desk login page: 
+  
+  http://localhost/osTicket/scp/login.php & enter your credentials 
+  
+  (This is for the Admin log-in & do Admin things.)
+  
+  </h2>
 <p>
 <img src="https://i.imgur.com/wC2ofg1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
