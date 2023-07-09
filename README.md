@@ -67,7 +67,7 @@ Enter your osTicket Virtual Machine username and password.
 <h2>Admin Panel vs Agent Panel</h2>
 Admin is someone who sets up the ticketing system, set up settings, define roles, and other general administrative duties.
 Agent is someone who actually works on the tickets and helping end-users.
-if your osTicket Website on the top right hand corner says "Admin Panel" it actually that means that you're operating in the Agent Panel.
+if your osTicket Website on the top right hand corner says "Admin Panel" it actually means that you're operating in the Agent Panel.
 
 ![image](https://github.com/shawnlynaraja/post-install-config/assets/138860791/4982bfa4-a510-4b02-986c-66bda543f085)
 
